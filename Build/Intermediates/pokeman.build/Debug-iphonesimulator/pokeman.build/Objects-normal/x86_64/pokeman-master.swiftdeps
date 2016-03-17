@@ -1,0 +1,7 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "fd52568397e7e6be8deef140b7d39024"
+build_time: [511490118, 151511000]
+inputs:
+  "/Users/srikanthadavalli/pokeman/pokeman/Pokeman.swift": [511489004, 0]
+  "/Users/srikanthadavalli/pokeman/pokeman/AppDelegate.swift": [511487924, 0]
+  "/Users/srikanthadavalli/pokeman/pokeman/ViewController.swift": [511490117, 0]

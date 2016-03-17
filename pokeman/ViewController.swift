@@ -12,13 +12,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        
+//        let pokeman = Pokeman(name: "Srikanth", pokeman_id: 6)
+//        print(pokeman.name)
+//        print(pokeman.pokeman_id)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+
 
 
 }
