@@ -6,4 +6,9 @@
 //  Copyright © 2016 Srikanth Adavalli. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+let _BASE_URL = "http://pokeapi.co"
+let _POKEMON_URL = "/api/v2/pokemon/"
+
+typealias DownloadComplete = () -> ()

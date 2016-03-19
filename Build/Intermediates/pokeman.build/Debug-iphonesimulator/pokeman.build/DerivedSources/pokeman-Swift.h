@@ -87,6 +87,7 @@ typedef int swift_int3  __attribute__((__ext_vector_type__(3)));
 typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -107,13 +108,65 @@ SWIFT_CLASS("_TtC7pokeman11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UILabel;
+@class UIImageView;
 @class NSBundle;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC7pokeman14ViewController")
-@interface ViewController : UIViewController
+SWIFT_CLASS("_TtC7pokeman9PokemonVC")
+@interface PokemonVC : UIViewController
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified pokemonTitleLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified pokemonImg;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified pokemonDescriptionLbl;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified defLbl;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified typeLbl;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified pokedexIDLbl;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified heightLbl;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified baseAttackLbl;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified weightLbl;
 - (void)viewDidLoad;
+- (void)updateUI;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class AVAudioPlayer;
+@class UICollectionView;
+@class NSIndexPath;
+@class UICollectionViewCell;
+@class UICollectionViewLayout;
+@class UISearchBar;
+@class UIStoryboardSegue;
+@class UIButton;
+
+SWIFT_CLASS("_TtC7pokeman14ViewController")
+@interface ViewController : UIViewController <UIBarPositioningDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UIScrollViewDelegate, UISearchBarDelegate>
+@property (nonatomic, weak) IBOutlet UICollectionView * __null_unspecified collection;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified titleLabel;
+@property (nonatomic, weak) IBOutlet UISearchBar * __null_unspecified searchBar;
+@property (nonatomic) BOOL inSearchPokemon;
+@property (nonatomic, strong) AVAudioPlayer * __null_unspecified audioPlayer;
+- (void)viewDidLoad;
+- (void)initAudio;
+- (void)parsePokemon;
+- (UICollectionViewCell * __nonnull)collectionView:(UICollectionView * __nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (NSInteger)collectionView:(UICollectionView * __nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
+- (void)collectionView:(UICollectionView * __nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * __nonnull)collectionView;
+- (CGSize)collectionView:(UICollectionView * __nonnull)collectionView layout:(UICollectionViewLayout * __nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)searchBarSearchButtonClicked:(UISearchBar * __nonnull)searchBar;
+- (void)searchBar:(UISearchBar * __nonnull)searchBar textDidChange:(NSString * __nonnull)searchText;
+- (void)prepareForSegue:(UIStoryboardSegue * __nonnull)segue sender:(id __nullable)sender;
+- (IBAction)pokemonMusic:(UIButton * __null_unspecified)sender;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7pokeman11pokemonCell")
+@interface pokemonCell : UICollectionViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified thumbNailImage;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified thumbNailLabel;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 

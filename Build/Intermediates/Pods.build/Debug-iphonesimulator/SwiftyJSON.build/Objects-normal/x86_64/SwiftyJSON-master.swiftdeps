@@ -1,0 +1,5 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "4ae762cc1cf7966e700288dd48f0279f"
+build_time: [511650377, 673350000]
+inputs:
+  "/Users/srikanthadavalli/pokeman/Pods/SwiftyJSON/Source/SwiftyJSON.swift": [511650367, 0]

@@ -1,0 +1,6 @@
+framework module Pods_pokeman {
+  umbrella header "Pods-pokeman-umbrella.h"
+
+  export *
+  module * { export * }
+}

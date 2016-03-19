@@ -1,0 +1,38 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Pokeman"
+provides-nominal:
+- "C7pokeman7Pokeman"
+provides-member:
+- ["C7pokeman7Pokeman", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "String"
+- "Int"
+- "Pokeman"
+depends-member:
+- !private ["PSs9AnyObject", "_name"]
+- !private ["PSs9AnyObject", "_pokeman_id"]
+- ["PSs9AnyObject", ""]
+- ["C7pokeman7Pokeman", "Int"]
+- ["C7pokeman7Pokeman", "String"]
+- !private ["C7pokeman7Pokeman", "_name"]
+- !private ["C7pokeman7Pokeman", "_pokeman_id"]
+- ["C7pokeman7Pokeman", "deinit"]
+- ["C7pokeman7Pokeman", "init"]
+- ["C7pokeman7Pokeman", "name"]
+- ["C7pokeman7Pokeman", "pokeman_id"]
+depends-nominal:
+- "PSs9AnyObject"
+- "C7pokeman7Pokeman"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+interface-hash: "8a5c055c92e1de2d25292a3196ec607f"

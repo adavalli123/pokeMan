@@ -1,0 +1,9 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "a7ebd05f1ed1aea4d5c6f221c69e37bd"
+build_time: [511553360, 944106000]
+inputs:
+  "/Users/srikanthadavalli/pokeman/pokeman/pokemonCell.swift": [511502536, 0]
+  "/Users/srikanthadavalli/pokeman/pokeman/AppDelegate.swift": [511487924, 0]
+  "/Users/srikanthadavalli/pokeman/pokeman/Pokeman.swift": [511489004, 0]
+  "/Users/srikanthadavalli/pokeman/pokeman/ViewController.swift": [511553360, 0]
+  "/Users/srikanthadavalli/pokeman/pokeman/CSV.swift": [511509697, 0]
